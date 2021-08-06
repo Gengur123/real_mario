@@ -5,10 +5,10 @@
 <% if @product.reviews.any? %>
   <h4>Here are the reivew for this product:</h4>
 
-  <% @product.reivews.each do |review| %>
+  <% @product.reviews.each do |review| %>
     <ul>
       <li>
-        <%= link_to review.name, product_review_path(@product, review) %>
+        <%= link_to review.author, product_review_path(@product, review) %>
       </li>
     </ul>
   <% end %>
