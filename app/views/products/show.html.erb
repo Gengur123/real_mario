@@ -1,5 +1,5 @@
 <h1><%= @product.name %></h1>
-<h3>This product cost: <%= @product.cost %>$</h3>
+<h3>This product cost: $ <%= @product.cost %></h3>
 <h3>This product came from <%= @product.country_of_origin %></h3>
 
 <% if @product.reviews.any? %>
@@ -16,7 +16,7 @@
   <p>No reivew are listed for this product.</p>
 <% end %>
 
-<p><%= link_to "Add an review", new_product_review_path(@product) %></p>
+<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
 
 <p><%= link_to "Edit", edit_product_path(@product) %></p>
 <p><%= link_to "Delete", product_path(@product),
