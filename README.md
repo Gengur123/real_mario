@@ -27,7 +27,7 @@ A application that allows users to create different products and store them usin
 * _To run the program, type `docker compose up` in terminal then navigate to a web browser and type `http://localhost:3000/`_
 
 ## Known Bugs
-* _Lots of bugs_
+* _No known bugs_
 
 ## License
 
