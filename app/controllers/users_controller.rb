@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authorize_admin, only: [:edit, :destroy]
+
 
 
 def new
@@ -12,18 +14,9 @@ def create
     session[:user_id] = @user.id
     redirect_to '/homes'
   else
-    flash[:alert] = "There was a problem signing up."
+    flash[:error] = "There was a problem signing up."
     redirect_to '/signup'
   end
-end
-
-def show
-  render :show
-end
-
-def admin
-    @users = User.all
-    render :admin_user
 end
 
 def edit
@@ -34,11 +27,11 @@ end
 def destroy
   @users = User.all
   if User.find(session[:user_id]) == User.find(params[:id])
-    flash[:notice] = "You cannot destroy your own account"
     render :admin_user
   else
     @user = User.find(params[:id])
     @user.destroy
+    flash[:notice] = "You deleted a user's account."
     render :admin_user
   end
 end
