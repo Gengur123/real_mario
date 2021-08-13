@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'products#index'
+  root to: 'homes#index'
+
+  get '/homes' => 'homes#index'
   resources :products do
     resources :reviews
   end
