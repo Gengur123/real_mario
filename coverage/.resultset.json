@@ -350,10 +350,20 @@
           null
         ]
       },
-      "/myapp/app/controllers/home_controller.rb": {
+      "/myapp/app/controllers/homes_controller.rb": {
         "lines": [
           null,
+          1,
           null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
           null,
           null
         ]
@@ -379,6 +389,7 @@
           1,
           null,
           1,
+          1,
           null,
           null,
           null,
@@ -393,15 +404,18 @@
           1,
           null,
           null,
+          1,
           1,
           1,
           1,
           1,
           null,
           0,
+          0,
           null,
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -442,8 +456,10 @@
           1,
           1,
           1,
+          1,
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -451,6 +467,7 @@
           null,
           0,
           0,
+          0,
           null,
           null,
           null,
@@ -459,7 +476,9 @@
           2,
           2,
           1,
+          1,
           null,
+          1,
           1,
           null,
           null,
@@ -504,6 +523,17 @@
           null,
           1,
           1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
           9,
           9,
           null,
@@ -526,6 +556,8 @@
       "/myapp/config/routes.rb": {
         "lines": [
           1,
+          1,
+          null,
           1,
           1,
           1,
@@ -669,6 +701,6 @@
         ]
       }
     },
-    "timestamp": 1628723225
+    "timestamp": 1628868731
   }
 }
