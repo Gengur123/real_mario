@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+body {
+  background-color: rgb(226, 225, 182);
+}
+
+.container {
+  padding: 30px;
+  background-color: azure;
+  margin: 100px;
+}
+
+.nav-item {
+  color: white;
+}
+#alert {
+  color: red;
+}
+
+#notice {
+  color: red;
+}
