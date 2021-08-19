@@ -13,6 +13,14 @@ describe "the add a review process" do
     click_on ("Create Review")
     expect(page).to have_content "Bob"
   end
+  
+  it "should not allow none accounts to add a new review" do
+    test_product = Product.create({:name => "Car", :cost => "15155", :country_of_origin => "Japan"})
+    visit products_path
+    click_on ("Car")
+    click_on ("Add a review")
+    expect(page).to have_content "You need to sign in to view this page."
+  end
 
   it "gives an error when no author is entered" do
     make_test_user
