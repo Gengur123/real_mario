@@ -12,6 +12,12 @@ describe "the add product process" do
     expect(page).to have_content 'Product successfully added!'
     expect(page).to have_content 'Car'
   end
+    it "should be able to adds a new product because not admin" do
+      make_test_user
+      visit products_path
+      click_link 'create new products'
+      expect(page).to have_content 'Admins only'
+    end
 
   it "gives an error when no name is entered" do
     visit new_product_path
